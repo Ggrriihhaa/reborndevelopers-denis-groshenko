@@ -1,0 +1,26 @@
+{
+  "name": "alexandru-hrisca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "stencil build --dev --watch --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/reborndevelopers/alexandru-hrisca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/reborndevelopers/alexandru-hrisca#readme",
+  "dependencies": {
+    "@stencil/core": "^2.11.0",
+    "@stencil/router": "^1.0.1",
+    "@stencil/sass": "^1.5.2",
+    "@stencil/store": "^1.5.0",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
