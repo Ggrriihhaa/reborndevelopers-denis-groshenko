@@ -1,13 +1,17 @@
 :host {
-    .error {
-        text-align: center;
+  .error {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 46px);
+    justify-content: center;
 
-        .error-message {
-            font-size: 1.5rem;
-        }
-
-        img {
-            width: 20vw;
-        }
+    &-message {
+      font-size: 1.5rem;
     }
+
+    img {
+      width: 60vw;
+    }
+  }
 }
