@@ -4,6 +4,7 @@ import { injectHistory, RouterHistory } from '@stencil/router';
 @Component({
   tag: 'page-home',
   shadow: true,
+  styleUrl: "page-home.scss",
 })
 export class PageHome {
   @Prop() history: RouterHistory;
@@ -14,8 +15,8 @@ export class PageHome {
         <h1>HOME</h1>
       </Host>
     );
-  }
+  } 
 
 }
 
-injectHistory(PageHome)
+injectHistory(PageHome) 
