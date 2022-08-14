@@ -13,6 +13,9 @@ export namespace Components {
     interface AppRoot {
         "history": RouterHistory;
     }
+    interface PageContact {
+        "history": RouterHistory;
+    }
     interface PageDetails {
     }
     interface PageHome {
@@ -35,6 +38,12 @@ declare global {
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
+    };
+    interface HTMLPageContactElement extends Components.PageContact, HTMLStencilElement {
+    }
+    var HTMLPageContactElement: {
+        prototype: HTMLPageContactElement;
+        new (): HTMLPageContactElement;
     };
     interface HTMLPageDetailsElement extends Components.PageDetails, HTMLStencilElement {
     }
@@ -63,6 +72,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "app-navigation": HTMLAppNavigationElement;
         "app-root": HTMLAppRootElement;
+        "page-contact": HTMLPageContactElement;
         "page-details": HTMLPageDetailsElement;
         "page-home": HTMLPageHomeElement;
         "page-list": HTMLPageListElement;
@@ -74,6 +84,9 @@ declare namespace LocalJSX {
         "history"?: RouterHistory;
     }
     interface AppRoot {
+        "history"?: RouterHistory;
+    }
+    interface PageContact {
         "history"?: RouterHistory;
     }
     interface PageDetails {
@@ -88,6 +101,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "app-navigation": AppNavigation;
         "app-root": AppRoot;
+        "page-contact": PageContact;
         "page-details": PageDetails;
         "page-home": PageHome;
         "page-list": PageList;
@@ -100,6 +114,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-navigation": LocalJSX.AppNavigation & JSXBase.HTMLAttributes<HTMLAppNavigationElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "page-contact": LocalJSX.PageContact & JSXBase.HTMLAttributes<HTMLPageContactElement>;
             "page-details": LocalJSX.PageDetails & JSXBase.HTMLAttributes<HTMLPageDetailsElement>;
             "page-home": LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
             "page-list": LocalJSX.PageList & JSXBase.HTMLAttributes<HTMLPageListElement>;
