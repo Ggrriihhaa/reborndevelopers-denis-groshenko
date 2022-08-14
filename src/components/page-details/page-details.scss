@@ -1,0 +1,31 @@
+:host {
+  h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  dl {
+    border-radius: 5px;
+    border-width: 1px 1px 0 0;
+    border: solid var(--app-color-black);
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 300px;
+  }
+  dt {
+    background: var(--app-color-black);
+    border-radius: 5px;
+    color: var(--app-color-white);
+    flex-basis: 20%;
+    padding: 2px 4px;
+    text-align: right;
+  }
+  dd {
+    border-bottom: 1px solid var(--app-color-black);
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+  }
+}

@@ -1,14 +1,15 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h } from "@stencil/core";
 
 @Component({
-  tag: 'page-details',
+  tag: "page-details",
   shadow: true,
+  styleUrl: "page-details.scss",
 })
 export class PageDetails {
-
   render() {
     return (
       <Host>
+        <h2>Detales</h2>
         <dl>
           <dt>Item 1</dt>
           <dd>Data for item 1</dd>
@@ -22,5 +23,4 @@ export class PageDetails {
       </Host>
     );
   }
-
 }
