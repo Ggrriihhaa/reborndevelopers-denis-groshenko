@@ -1,42 +1,31 @@
-
 :host {
   h2 {
-    margin-bottom: 10px;
     margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9rem;
+    gap: 25px;
+  }
+  .flex-box-li {
+    flex-wrap: wrap;
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+    border: solid,;
+    border-width: 1px;
+    border-radius: 5px;
     text-align: center;
   }
 
-  .page-list {
-    border-spacing: 1px;
-    border: 1px solid var(--app-color-primary);
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    margin: auto;
-    max-width: 300px;
-
-    td,
-    th {
-      padding: 8px;
-      border: 1px solid var(--app-color-primary);
-    }
-
-    tr {
-      &:nth-child(even) {
-        background-color: var(--app-color-white);
-      }
-
-      &:hover {
-        background-color: var(--app-color-primary);
-        border: 1px solid var(--app-color-white);
-        color: var(--app-color-primary-contrast);
-      }
-    }
-
-    th {
-      background-color: var(--app-color-primary);
-      color: white;
-      padding-bottom: 12px;
-      padding-top: 12px;
-      text-align: left;
-    }
-  }
 }

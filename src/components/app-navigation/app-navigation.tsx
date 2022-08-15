@@ -18,13 +18,13 @@ export class AppNavigation {
       <Host>
         {
           <div class="hamburger-menu">
-            <input class="menu__toggle" id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" htmlFor="menu__toggle">
+            <input class="menu-toggle" id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" htmlFor="menu-toggle">
               <span></span>
             </label>
-            <ul class="menu__box">
+            <ul class="menu-box">
               <li
-                class="menu__item"
+                class="menu-item"
                 onClick={() => {
                   this.navigateTo("/");
                 }}
@@ -32,7 +32,7 @@ export class AppNavigation {
                 Home
               </li>
               <li
-                class="menu__item"
+                class="menu-item"
                 onClick={() => {
                   this.navigateTo("/list");
                 }}
@@ -40,7 +40,7 @@ export class AppNavigation {
                 List
               </li>
               <li
-                class="menu__item"
+                class="menu-item"
                 onClick={() => {
                   this.navigateTo("/details");
                 }}
@@ -48,7 +48,7 @@ export class AppNavigation {
                 Details
               </li>
               <li
-                class="menu__item"
+                class="menu-item"
                 onClick={() => {
                   this.navigateTo("/contact");
                 }}

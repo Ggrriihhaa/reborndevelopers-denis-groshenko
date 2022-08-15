@@ -5,45 +5,38 @@
     text-align: center;
   }
   .example_form {
-    -ms-flex-align: stretch;
-    -ms-flex-direction: column;
-    -ms-flex-line-pack: center;
-    -ms-flex-pack: start;
-    -ms-flex-wrap: nowrap;
-    -webkit-align-content: center;
-    -webkit-align-items: stretch;
-    -webkit-flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -webkit-justify-content: flex-start;
-    align-content: center;
-    align-items: stretch;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin: auto;
+    align-items: stretch;
+    align-content: center;
     max-width: 300px;
-  }
-  .example_form input,
-  .example_form textarea {
-    border-radius: 5px;
-    border: solid 1px var(--app-color-primary);
-    color: var(--app-color-black);
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: auto;
+    input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: solid 1px var(--app-color-primary);
+      border-radius: 5px;
+      color: var(--app-color-black);
+    }
+    textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: solid 1px var(--app-color-primary);
+      border-radius: 5px;
+      color: var(--app-color-black);
+    }
   }
   .submit_btn {
     align-self: center;
-    background-color: var(--app-color-primary);
-    color: var(--app-color-primary-contrast);
     width: 50%;
+    color: var(--app-color-black);
+    background-color: var(--app-color-white);
+    &:hover {
+      background-color: var(--app-color-black);
+      color: var(--app-color-white);
+    }
   }
-  .submit_btn:hover {
-    background-color: var(--app-color-primary);
-    color: var(--app-color-primary-contrast);
-  }
-  @media (min-width: 770px) {
-  }
+  
 }

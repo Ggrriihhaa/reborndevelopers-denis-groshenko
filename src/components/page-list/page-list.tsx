@@ -56,23 +56,19 @@ export class PageList {
     return (
       <Host>
         <h2>List</h2>
-        <table class="page-list">
-          <tr>
-            <th>img</th>
-            <th>title</th>
-            <th>description</th>
-          </tr>
-          {this.items.map((item) => (
-            <tr>
-              <td>
-                <img src={item.img}></img>
-              </td>
-              <td>{item.title}</td>
-              <td>{item.description}</td>
-            </tr>
-          ))}
-        </table>
+<ul class='flex-box'>
+{ this.items.map((item) =>
+  <li class= 'flex-box-li'>
+    <img src={item.img}></img>
+    <h4>{item.title}</h4>
+    <p>{item.description}</p>
+  </li>
+)}
+</ul>
       </Host>
     );
   }
 }
+
+
+
